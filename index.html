@@ -1,569 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="shortcut icon" href="img/uniTuenda.ico" type="image/x-icon">
+  <title>HM</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
-  <title>uniTuenda</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+
+  <style>
+    img {
+    width: auto;
+    height: 84vh;
+}
+
+@media (max-width:768px){
+  .g{
+  flex-direction: column-reverse;
+}
+}
+
+
+  </style>
 </head>
 
 <body>
-  
-  <a href="#" class="scrolltop " id="scroll-top">
-    <i class="fas fa-chevron-up scrolltop_icon"></i>
-  </a>
 
-  <a href="#" class="fixsocial">
-    Whatsapp
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <!-- Header -->
-  <header class="l-header" id="header">
-    <nav class="nav bd-container">
-      <!-- <a href="" class="nav_logo">
-        <img width="100px" src="img/uniTuenda.png" alt="UniTuenda">
-      </a> -->
-
-      <a class="navbar-brand" href="index.html">uniTuenda</a>
-
-      <div class="nav_menu" id="nav-menu">
-        <ul class="nav_list">
-          <li class="nav_item"><a href="index.html" class="nav_link active-link">Home</a></li>
-          <li class="nav_item"><a href="about.html" class="nav_link">Sobre nós</a></li>
-          <li class="nav_item"><a href="service.html" class="nav_link">Serviços</a></li>
-          <!-- <li class="nav_item"><a href="portfolio.html" class="nav_link">Trabalhos</a></li> -->
-          <li class="nav_item"><a href="plan.html" class="nav_link">  Planos</a></li>
-          <li class="nav_item"><a href="contact.html" class="nav_link">Contactos</a></li>
-        </ul>
-      </div>
-
-      <div class="nav_toggle" id="nav-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
-
-    </nav>
-
-  </header>
-
-  <main class="l-main">
-
-    <section class="home" id="home">
-      <div class="home_container bd-container bg-grid">
-        <!-- <div class="home_data">
-          <main class="intro">
-            <h1>Software de Gestão, Facturação & Web Site</h1>
-            <p>uniTuenda fazendo da tecnologia o seu dia-a-dia</p>
-            <a href="#contact" class="button">Contactar</a>
-          </main>
-
-          <div class="svg-header d-n" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
-              preserveAspectRatio="none" style="height: 100%; width: 100%;">
-              <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke: none; fill: #fff;"></path>
-            </svg>
-          </div>
-        </div> -->
-                <!--  -->
-                <div class="effect-wrap">
-                  <i class="fas fa-plus effect effect-1"></i>
-                  <i class="fas fa-plus effect effect-2"></i>
-                  <i class="fas fa-circle-notch effect effect-3"></i>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col-lg-7 col-md-7">
-                    <div class="home-text">
-                      <h1>Melhores soluções para os problemas da sua empresa</h1>
-                      <p>Aqui na uniTuenda os seus problemas ficam no passado vem conhecer
-                        as melhores soluções tecnologicas.
-                      </p>
-                      <div class="home-btn">
-                        <a href="#" class="btn btn-1 cont">Contactar</a>
-                      </div>
+  <div id="page-wrapper" style="max-height: 100vh;" >
+    <header>
+      <div class="yscott-header-navbar">
+        <div class="container yscott-navbar-container">
+          <div class="yscott-navigation-wrap bg-black yscott-start-header start-style">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <nav class="navbar navbar-expand-md navbar-light">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="Hadja models"> </a>
+                    <!-- Menu -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto py-4 py-md-0">
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                          <a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+                          <a class="nav-link" href="about.html">Sobre nós</a></li>
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+                          <a class="nav-link" href="services.html">Serviços</a></li>
+                          <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                              aria-haspopup="true" aria-expanded="false">Modelos <span class="fas fa-angle-down"></span></a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="female.html">Femenino</a>
+                              <a class="dropdown-item" href="male.html">Masculino</a> 
+                            </div>
+                          </li>
+                          <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                              aria-haspopup="true" aria-expanded="false">Inscrição <span class="fas fa-angle-down"></span></a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="inscription.html">Seja um modelo</a> 
+                              <a class="dropdown-item" href="female.html">Moda Luanda</a>
+                              <a class="dropdown-item" href="male.html">Moda solidária</a> 
+                            </div>
+                          </li>
+                        
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link"
+                            href="contact.html">Contactos</a> </li>
+                      </ul>
                     </div>
-                  </div>
-                  <div class="col-lg-5 col-md-5 text-center">
-                    <div class="home-imgs">
-                      <div class="circles">
-                      </div>
-                      <img src="img/uniTuenda (white).png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-      </div>
-
-      <!-- <div class="svg-header d-none" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
-          preserveAspectRatio="none" style="height: 100%; width: 100%;">
-          <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
-            style="stroke: none; fill: #fff;"></path>
-        </svg></div> -->
-
-      <a href="#about" class="scroll-down">
-        <div class="mouse">
-          <span></span>
-        </div>
-        <div class="arrow">
-          <span></span>
-        </div>
-      </a>
-    </section>
-
-    <!--About-->
-    <div class="back-about">
-      <section class="about section bd-container" id="about">
-        <span class="section-subtitle">Sobre nós</span>
-        <h2 class="section-title">uniTuenda</h2>
-
-        <div class="about_container bd-grid">
-          <div class="about_data bd-grid">
-            <p class="about_description">
-              Somos uma empresa voltada para o ramo de tecnologia de informação
-              especializada em desenvolvimento web, software de gestão e facturação.
-            </p>
-
-            <p class="about_description">
-              A uniTuenda é uma empresa jovem e extremamente dinâmica que
-              aposta em transformar os problemas dos clientes em soluções
-              operacionais, numa métrica de serviço assente em três pilares
-              fundamentais: Dinamismo, Profissionalismos e responsabilidade.
-            </p>
-
-            <!-- <p class="about_description">
-              Quer abraçar a onda da transformação digital mas os custos de implementação
-              são muito elevados? Necessita de suporte técnico adaptável aos requisitos da
-              sua empresa? Tem projetos e não sabe como os desenvolver? Nós somos a solução.
-            </p> -->
-
-            <div class="about_info">
-              <div>
-                <span class="about_info-title">Missão</span>
-                <span class="about_info-name">Dar solução aos seus problemas</span>
-              </div>
-
-              <div>
-                <span class="about_info-title">Visão</span>
-                <span class="about_info-name">Tornar a uniTuenda a maior empresa de tecnologia</span>
-              </div>
-
-              <div>
-                <span class="about_info-title">Valores</span>
-                <span class="about_info-name">Fazer da tecnologia o seu dia-a-dia</span>
-              </div>
-            </div>
-
-            <div class="about_button">
-              <a href="about.html" class="button">saber mais</a>
-            </div>
-          </div>
-          <img src="img/uniTuenda (post 3).png" alt="" class="about_img">
-        </div>
-      </section>
-    </div>
-
-    <!--Services-->
-    <div class="back">
-      <section class="services section bd-container" id="services">
-        <span class="section-subtitle">Serviços</span>
-        <h2 class="section-title">uniTuenda</h2>
-        <div class="services_container bd-grid">
-
-          <div class="services_data">
-            <i class=" services_icon">
-              <i class="fas fa-code services_icon"></i>
-            </i>
-            <h3 class="services_title">Web sites</h3>
-            <a href="service.html" class="button">Saber Mais</a>
-          </div>
-
-          <div class="services_data">
-            <i class="fas fa-laptop-code services_icon"></i>
-            <h3 class="services_title">Aplicativos DeskTop</h3>
-            <a href="service.html" class="button">Saber Mais</a>
-          </div>
-
-          <div class="services_data">
-            <i class="fas fa-tablet-alt services_icon"></i>
-            <h3 class="services_title">Aplicativos Mobile</h3>
-            <a href="service.html" class="button">Saber Mais</a>
-          </div>
-        </div>
-
-        <div class="services_container bd-grid">
-
-          <div class="services_data">
-            <i class=" services_icon">
-              <i class="fas fa-code services_icon"></i>
-            </i>
-            <h3 class="services_title">Design gráfico</h3>
-            <a href="service.html" class="button">Saber Mais</a>
-          </div>
-
-          <div class="services_data">
-            <i class="fas fa-laptop-code services_icon"></i>
-            <h3 class="services_title">Gestão de Redes Socias</h3>
-            <a href="service.html" class="button">Saber Mais</a>
-          </div>
-
-          <div class="services_data">
-            <i class="fas fa-tablet-alt services_icon"></i>
-            <h3 class="services_title">Aplicativos</h3>
-            <a href="service.html" class="button">Saber Mais</a>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!--Help-->
-    <section class="project section bd-container">
-      <div class="project_container  bd-grid">
-        <div class="project_data">
-          <h2 class="mb">"Pessoas não compram produtos. Pessoas compram soluções para os seus problemas!"</h2>
-          <!-- <h4 class="project_title">Damos solução aos teus Problemas!</h4> -->
-          <p class="project_description">
-            Diga-nos qual, e nós resolvemos!
-          </p>
-          <a href="#contact" class="button button--flex button-white">
-            contactar-nos
-            <i class="fas fa-envelope project_icon button_icon"></i>
-          </a>
-        </div>
-        <img src="img/uniTuendaProblem.png" alt="" class="project_img">
-      </div>
-    </section>
-
-    <!--portfolio-->
-      <!-- <div class="back">
-      <section class="portfolio section bd-container" id="project">
-        <span class="section-subtitle">Conheça os nossos projectos</span>
-        <h2 class="section-title">Projectos</h2>
-
-        <div class="portfolio_container container swiper-container ">
-          <div class="swiper-wrapper">
-            <div class="portfolio_content grid swiper-slide">
-              <img src="img/UFProject.png" alt="" class="portfolio_img">
-              <div class="portfolio_data">
-                <h3 class="portfolio_title">UFC Consultória</h3>
-                <p class="portfolio_description">Uma empresa de consultória, 
-                  formação e prestação de serviços Angolana e com o foco nos problemas dos seus clientes.
-                </p>
-                <a target="_blank" href="https://tiohs.github.io/UF/?fbclid=IwAR2BcfUeplYPs1T9tDio_8DShPE-g0advOvEqtaNvk9wUGFZQJlzQTWlHJ4" class="button button--flex button--small portfolio_button">
-                  Ver
-                  <i class=" fas fa-arrow-right button_icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio_content grid swiper-slide">
-              <img src="img/unicakes.png" alt="" class="portfolio_img">
-              <div class="portfolio_data">
-                <h3 class="portfolio_title">UniCakes</h3>
-                <p class="portfolio_description">
-                  Sistema de gestão para a padaria e pastelaria unicakes
-                </p>
-                <a href="#" class="button button--flex button--small portfolio_button">
-                  Ver
-                  <i class=" fas fa-arrow-right button_icon"></i>
-                </a>
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="swiper-button-next">
-            <i class="fas fa-angle-right swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="fas fa-angle-left swiper-portfolio-icon"></i>
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-    </div> -->
-    
-    <!-- aqui -->
-    <!-- <div class="back">
-      <section class="plan">
-        <h2 class="section-title">Planos</h2>
-        <h3 class="subtitle-p">A melhor solução para os nossos clientes</h3>
-
-        <div class="basic-price-col">
-          <div class="basic-price-info">
-          
-          </div>
-        </div>
-      </section>
-    </div> -->
-    
-    <section class="section-plans js--section-plans" id="plans">
-      <div class=" bd-container">
-        <h2 class="section-title">Web Site - Planos</h2>
-        <h3 class="subtitle-p">A melhor solução para os nossos clientes</h3>
-        
-      <div class="services_container bd-grid">
-          <div>
-              <div class="plan-box js--wp-4">
-                  <div>
-                      <h3>Búe Básicos</h3>
-                      <p class="plan-price">80.000kz</p>
-                  </div>
-                  <div>
-                      <ul>
-                          <li> Página Estática</li>
-                          <li> Design Profissional</li>
-                          <li> Menu(Land Page)</li>
-                          <li> Domínio Internacional</li>
-                          <li> Hospedagem web com 2GB</li>
-                          <li> Manutenção free 3 messes</li>
-                          <li> Slide Dinâmico(Fotos, Texto)</li>
-                      </ul>
-                  </div>
-                  <div>
-                      <a href="contact.html" class="button">Contactar</a>
-                  </div>
-              </div>
-          </div>
-          <div>
-              <div class="plan-box backg">
-                  <div>
-                      <h3>Básicos</h3>
-                      <p class="plan-price">120.000kz</p>
-                  </div>
-                  <div>
-                      <ul>
-                          <li></i>Página Estática</li>
-                          <li></i>Design Profissional e Responsivo</li>
-                          <li></i>Menu(Land Page)</li>
-                          <li></i>Domínio Internacional</li>
-                          <li></i>Hospedagem web com 2GB</li>
-                          <li></i>Manutenção free 3 messes</li>
-                          <li></i>Slide Dinâmico(Fotos, Texto)</li>
-                          <li></i>Slide Dinâmico(Vídeos)</li>
-                          <li></i>Redes sociais</li>
-                          <li></i>Menu & Páginas</li>
-                      </ul>
-                  </div>
-                  <div>
-                      <a href="contact.html" class="button button-white">Contactar</a>
-                  </div>
-              </div>
-          </div>
-          <div>
-              <div class="plan-box">
-                  <div>
-                      <h3>Gold</h3>
-                      <p class="plan-price">230.000kz</p>
-                      <p class="plan-price-meal">&nbsp;</p>
-                  </div>
-                  <div>
-                      <ul>
-                        <li>Página Estática</li>
-                        <li>Design Profissional e Responsivo</li>
-                        <li>Menu(Land Page)</li>
-                        <li>Domínio Internacional</li>
-                        <li>Hospedagem web com 5GB</li>
-                        <li>Manutenção free 5 messes</li>
-                        <li>Slide Dinâmico(Fotos, Texto)</li>
-                        <li>Slide Dinâmico(Vídeos)</li>
-                        <li>Redes sociais</li>
-                      </ul>
-                  </div>
-                  <div>
-                      <a href="contact.html" class="button">Contactar</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </div>
-  </section>
-  <!--  -->
-    <!--Testemuhno-->
-    <!-- <section class="testimonial section bd-container">
-      <span class="section-subtitle">UniTuenda</span>
-      <h2 class="section-title">Testemunhos</h2>
-
-      <div class="testimonial_container swiper-container">
-        <div class="swiper-wrapper">
-          <div class="testimonial-content swiper-slide">
-            <div class="testimonial_data">
-              <div class="testimonial_header">
-                <img src="img//passe7.jpg" alt="" class="testimonial_img">
-                <div>
-                  <h3 class="testimonial_name"></h3>
-                  <span class="testimonial_client"></span>
+                  </nav>
                 </div>
               </div>
-              
-              <div>
-                <i class="fas fa-star testimonial_icon-star"></i>
-                <i class="fas fa-star testimonial_icon-star"></i>
-                <i class="fas fa-star testimonial_icon-star"></i>
-                <i class="fas fa-star testimonial_icon-star"></i>
-                <i class="fas fa-star testimonial_icon-star"></i>
-              </div>
-            
             </div>
-            <p class="testimonial_description">
-              
-            </p>
           </div>
-
         </div>
-        <div class="swiper-pagination swiper-pagination-testimonial"></div>
       </div>
-    </section> -->
-    <!--  -->
-
-    <div class="bg">
-      <section class="project section bd-container">
-        <div class="circle circp1"></div>
-        <!-- <div class="project_container  bd-grid">
-          <div class="project_data">
-            <h2 class="project_title">Fazendo da tecnologia o seu dia-a-dia</h2>
-            <a href="#contact" class="button button--flex button-white">
-              contactar-nos
-              <i class="fas fa-envelope project_icon button_icon"></i>
-            </a>
-          </div>
-          <img src="img/uniTuenda (black).png" alt="" class="project_img wi">
-        </div> -->
-        <!-- <div class="project_container bd-grid">
-          simao 
-        </div> -->
-        <blockquote class="blockquote text-center text-white p-md-5 p-3">
-          <p class="display-4"><em>"A felicidade não está na estrada que leva a algum lugar. A felicidade é a própria
-              estrada."</em></p>
-          <footer class="blockquote-footer text-white">Bob Dylan</footer>
-        </blockquote>
-      </section>
-    </div>
-
-    <!--contact🎮-->
-    <div class="back">
-      <section class="contact section bd-container" id="contact">
-        <span class="section-subtitle">para projectos</span>
-        <h2 class="section-title">Contacta-nos</h2>
-
-        <div class="contact_container bd-grid">
-          <div class="contact_content bd-grid">
-            <div class="contact_box">
-              <i class="fas fa-home contact_icon"></i>
-              <h3 class="contact_title">localização</h3>
-              <span class="contact_description">Angola, Luanda, Golf2 </span>
-            </div>
-
-            <div class="contact_box">
-              <i class="fas fa-home contact_icon"></i>
-              <h3 class="contact_title">Telefone</h3>
-              <span class="contact_description">+244 946 555 769</span>
-
-            </div>
-
-            <div class="contact_box">
-              <i class="fas fa-at contact_icon"></i>
-              <h3 class="contact_title">gmail</h3>
-              <span class="contact_description">unituenda@gmail.com</span>
-
-            </div>
-
-            <div class="contact_box">
-              <i class="fas fa-home contact_icon"></i>
-              <h3 class="contact_title">chat</h3>
-              <div>
-                <a href="https://www.facebook.com/unituenda/" target="_blank" class="contact_social">
-                  <i class="fab fa-facebook-f"></i>
+    </header>
+    <div class="yscott-homepage-section">
+      <div class="container">
+        <div class="row g">
+          <div class="col-md-6  d-flex " >
+            <div class="align-self-center animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+              <h1 class="display-4">Modelos de Qualidade</h1>
+              <div class="latest">
+              </div>
+              <p class="text-white text-justify">
+                Em nosso portfólio constam 78 modelos do sexo masculino e feminino 
+                com participações em eventos mundiais como New York Fashion Week, 
+                Africa Fashion Week, Joanesburg Fashion Week, Mocambique FW, 
+                Botswana Fashion Week e muitos outros.
+              </p>
+              <p >
+                <a href="" class="btn btn-outline-light" >
+                  <i class="fab fa-facebook"></i>
                 </a>
-                <a href="#" target="_blank" class="contact_social">
-                  <i class="fab fa-whatsapp-square"></i>
-                </a>
-                <a href="https://www.instagram.com/unituenda/" target="_blank" class="contact_social">
+                <a href="" class="btn btn-outline-light" >
                   <i class="fab fa-instagram"></i>
                 </a>
-              </div>
+                <a href="" class="btn btn-outline-light" >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </p>
             </div>
           </div>
-
-          <form action="" class="contact_form">
-            <div class="contact_inputs">
-              <input type="text" placeholder="Name" class="contact_input">
-              <input type="email" placeholder="Email" class="contact_input">
-            </div>
-
-            <div class="contact_inputs">
-              <input type="text" placeholder="Projectos" class="contact_input">
-              <input type="number" placeholder="Numero" class="contact_input">
-            </div>
-
-            <textarea name="" id="" cols="0" rows="7" placeholder="Messagem" class="contact_input"></textarea>
-            <input type="button" value="Envia uma menssagem" class="button contact_button">
-          </form>
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <!--Footer start🎮-->
-  <section class="footer">
-    <div class="footer-box">
-      <div class="foot-wave foot-animation"></div>
-    </div>
-
-    <div class="container">
-      <div class="foot">
-        <div class="single-footer">
-          <h4>uniTuenda</h4>
-          <p>
-            Fazendo da tecnologia o seu dia-a-dia
-          </p>
-          <div class="social-footer">
-            <a href="https://www.facebook.com/unituenda/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/unituenda/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <div class="col-md-6 animate-box fadeInRight animated " data-animate-effect="fadeInRight">
+            <img src="img/banner.png" class="im" alt="Modelo da Hadja Model">
           </div>
         </div>
-        <div class="single-footer">
-          <h4>menu</h4>
-          <ul>
-            <li><a href="#home"> <i class="fas fa-chevron-right"></i> Home</a></li>
-            <li><a href="about.html"> <i class="fas fa-chevron-right"></i> Sobre nós</a></li>
-            <li><a href="service.html"> <i class="fas fa-chevron-right"></i> Serviços</a></li>
-            <li><a href="portfolio.html"> <i class="fas fa-chevron-right"></i> Projectos</a></li>
-            <li><a href="contact.html"> <i class="fas fa-chevron-right"></i> Contactar</a></li>
-          </ul>
-        </div>
-
-        <div class="single-footer">
-          <h4>Contactar</h4>
-          <ul>
-            <li><a href="#"> <i class="fas fa-map-marked-alt"></i> Luanda, golf2</a></li>
-            <li><a href="#"> <i class="fas fa-mobile-alt"></i> +244 946 555 769</a></li>
-            <li><a href="#"> <i class="fas fa-envelope"></i> uniTuenda@gmail.com</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="copy-right">
-        <p>&copy; 2021. uniTuenda Todos Direitos Reservados</p>
       </div>
     </div>
-    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-        style="height: 100%; width: 100%;">
-        <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
-          style="stroke: none; fill: #fff;"></path>
-      </svg></div>
-  </section>
 
-  <!-- Footer -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

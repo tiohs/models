@@ -1,0 +1,218 @@
+.bg-maincolor{
+  background: goldenrod;
+}
+body {
+	background-color: #252525;
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+	overflow: visible;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+}
+
+p + .progress {
+	margin-top: -12px;
+}
+
+.progress-title {
+	color: #fff;
+	font-family: "Vidaloka", serif;
+	font-size: 12px;
+	letter-spacing: 4px;
+	line-height: 1.6;
+	margin-bottom: 20px !important;
+	padding-right: 45px;
+	text-transform: uppercase;
+}
+
+.progress {
+	background-color: #fff;
+	height: 5px !important;
+	margin-bottom: 28px;
+	overflow: visible;
+	position: relative;
+}
+
+.progress [data-transitiongoal] {
+	width: 0;
+}
+
+.progress .progress-bar {
+	transition: width 0.5s ease 0.2s;
+}
+
+.progress span {
+	font-family: "Vidaloka", serif;
+	font-size: 12px;
+	letter-spacing: 4px;
+	position: absolute;
+	right: -3px;
+	top: -34px;
+}
+
+.ds {
+	background-color: #1a1a1a;
+	color: #e8e8e8;
+}
+
+.single-sdel .model {
+	background: #000;
+	padding-bottom: 60px;
+}
+
+
+.single-model .item-gallery .item-content {
+	border-radius: 0;
+	padding: 32px 38px;
+}
+
+@media (max-width: 992px) {
+	.single-model .item-gallery .item-content {
+		padding: 32px 20px;
+	}
+}
+
+.single-model .item-gallery .item-content .model-data {
+	justify-content: space-between;
+	text-align: center;
+}
+
+.single-model .item-gallery .item-content .model-data li {
+	width: 20%;
+}
+
+@media (max-width: 648px) {
+	.single-model .item-gallery .item-content .model-data {
+		justify-content: center;
+	}
+
+	.single-model .item-gallery .item-content .model-data li {
+		width: 25%;
+	}
+}
+
+.single-model .feature-list {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.single-model .feature-list li {
+	border-color: #1a1a1a;
+}
+
+.single-model .feature-list li a {
+	color: #e41779;
+}
+
+.single-model .feature-list li a:hover {
+	color: #fff;
+}
+
+@media (max-width: 992px) {
+	.single-model .feature-list {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 30px;
+	}
+}
+
+.item-gallery {
+	background: transparent;
+	overflow: hidden;
+	position: relative;
+}
+
+.item-gallery.vertical-item .item-media::before {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5) 100%);
+	bottom: 0;
+	content: "";
+	display: block;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.item-gallery.vertical-item.grid .item-media::before {
+	content: none;
+}
+
+.item-gallery .item-content {
+	background-color: #fff;
+	border-radius: 0 0 5px 5px;
+	padding: 48px 15px 31px;
+	position: relative;
+	top: -7px;
+	transition: all .3s ease-in-out;
+	z-index: 3;
+}
+
+.item-gallery .item-content .item-title {
+	font-family: "Vidaloka", serif;
+	left: 50%;
+	opacity: 1;
+	position: absolute;
+	text-transform: uppercase;
+	top: -29px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 5;
+}
+
+.item-gallery .item-content .item-title .title {
+	color: #fff;
+	font-size: 40px;
+	letter-spacing: 1px;
+}
+
+.item-gallery .item-content .item-title .subtitle {
+	color: #000;
+	font-size: 24px;
+	margin-top: -6px;
+}
+
+.item-gallery .item-content .model-data {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: "Vidaloka", serif;
+	font-size: 12px;
+	justify-content: center;
+	line-height: 16px;
+	list-style: none;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.item-gallery .item-content .model-data li {
+	padding: 4px 12px;
+	text-align: center;
+}
+
+.item-gallery .item-content .model-data li span {
+	display: block;
+	width: 100%;
+}
+
+.item-gallery .item-content .model-data .title {
+	color: #e41779;
+}
+
+.item-gallery .item-content .model-data .data {
+	color: #000;
+}
+
+.item-gallery.content-absolute .item-content {
+	bottom: -1px;
+	top: auto;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+.item-gallery:hover.content-absolute .item-content {
+	-webkit-transform: none;
+	transform: none;
+}
