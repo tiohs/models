@@ -1,0 +1,189 @@
+
+.home{
+  height: 100vh;
+  padding: 150px 0;
+  border-radius: 0 0 200px 0;
+  position: relative;
+  z-index: 1;
+  background-image: url('../img/pexels-christina-morillo-1181341.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.home::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--first-color);
+  opacity: 0.6;
+  border-radius: 0 0 200px 0;
+}
+
+/*card-flex*/
+.flex{
+  display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+  width: 1000px;
+  margin: 20px;
+  min-height: 100vh;
+}
+
+.flex
+.card {
+  position: relative;
+  height: 250px;
+  background: #fff;
+  display: flex;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(174 190 205 / 30%);
+  transition: 0.4s;
+}
+
+
+.flex .card .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--first-color);
+  box-shadow: 0 4px 6px rgb(174 190 205 / 30%);
+  border-radius: 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.flex .card .imgBx:before{
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  /* font-size: 6em; rgba(255, 255, 255, 0.5) */
+  font-size: 2em;
+  color: #fff;
+  font-weight: 700;
+}
+
+.flex .card:hover .imgBx{
+  width: 150px;
+  height: 150px;
+  left: -75px;
+  top: calc(50% - 75px);
+  transition: 0.5s ease-in-out;
+  background: var(--first-color);
+  font-size: 0px;
+}
+
+.flex .card .imgBx img{
+  max-width: 100px;
+  transition: 0.5s ease-in-out;
+}
+
+.flex .card:hover .imgBx img{
+  max-width: 75px;
+}
+
+.flex .card .content{
+  position: absolute;
+  right: 0;
+  width: calc(100% - 75px);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex .card .content h3{
+  margin-bottom: 5px;
+  font-size: 24x;
+}
+
+.flex .card .content a{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #333;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 992px){
+  .flex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex .card{
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px){
+  .flex .card{
+    max-width: 300px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .flex .card .imgBx{
+    position: relative;
+  }
+
+  .flex .card .imgBx,
+  .flex .card:hover .imgBx{
+    width: 100%;
+    height: 200px;
+    left: 0;
+  }
+
+  .flex .card .imgBx img,
+  .flex .card:hover .imgBx img{
+    max-width: 100px;
+  }
+
+  .flex .card .content{
+    position: relative;
+    width: 100%;
+  }
+}
+
+/**/
+.wi {
+  width: 300px;
+}
+.back{
+  background-color: var(--first-color-lighten);
+}
+
+.project_container {
+  padding: 1.5rem 1rem;
+  background-color: var(--second-color);
+  color: white;
+  border-top-left-radius: 65px;
+  border-bottom-right-radius: 65px;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

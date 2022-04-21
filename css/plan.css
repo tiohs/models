@@ -1,0 +1,146 @@
+
+.home{
+  height: 100vh;
+  padding: 150px 0;
+  border-radius: 0 0 200px 0;
+  position: relative;
+  z-index: 1;
+  background-image: url('../img/plano.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.home::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--first-color);
+  opacity: 0.6;
+  border-radius: 0 0 200px 0;
+}
+
+/**/
+.wi{
+  width: 300px;
+}
+
+/*Plan*/
+
+.section-plans #prev,
+.section-plans #next{
+  position: absolute;
+  top: 230%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  z-index: 100;
+  height: 5rem;
+  width: 5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  color: var(--first-color);
+  border: .2rem solid var(--first-color);
+  cursor: pointer;
+  text-align: center;
+}
+
+.section-plans #prev:hover,
+.section-plans #next:hover{
+  color: #fff;
+  background-color: var(--first-color);
+}
+
+.section-plans #prev{
+  left: 3rem;
+}
+
+.section-plans #next{
+  right: 3rem;
+}
+
+.section-plans .section-title{
+  padding-top: 6rem;
+}
+
+.subtitle-p{
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.section-plans .bd-container{
+  display: none;
+}
+
+.section-plans .bd-container.active{
+  display: block;
+}
+
+/* ----------------------------------------------- */
+/* PLAN */
+/* ----------------------------------------------- */
+
+.section-plans {
+  background-color: #f4f4f4;
+  /* height: 100vh; */
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.plan-box.backg{
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
+  text-align: center;
+}
+
+.plan-box div {
+  padding: 15px;
+  /* border-bottom: 1px solid #e8e8e8; */
+}
+
+.plan-box div:first-child {
+  /* background-color: #fcfcfc; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: var(--second-color);
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
